@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+          <h1>Timezone API</h1>
+          <h2>Your Current Time Zone</h2>
+          <div id="current-timezone">
+            <p>Name of Time Zone: <span id="current-name">Loading...</span></p>
+            <p>Lat: <span id="current-lat">-</span>, Long: <span id="current-lon">-</span></p>
+            <p>Offset STD: <span id="current-offset-std">-</span></p>
+            <p>Offset DST: <span id="current-offset-dst">-</span></p>
+            <p>Country: <span id="current-country">-</span></p>
+            <p>Postcode: <span id="current-postcode">-</span></p>
+            <p>City: <span id="current-city">-</span></p>
+          </div>
+        </div>
+  
+        <div class="section">
+          <h2>Enter Address</h2>
+          <div class="input-group">
+            <input type="text" id="address" placeholder="Address" />
+          </div>
+          <button id="fetch-timezone-btn" class="button">Submit</button>
+          <p id="error-message" class="error hidden">Please enter a valid address.</p>
+  
+          <div id="address-timezone" class="result hidden">
+            <h3>Your Result</h3>
+            <p>Name of Time Zone: <span id="address-name">-</span></p>
+            <p>Lat: <span id="address-lat">-</span>, Long: <span id="address-lon">-</span></p>
+            <p>Offset STD: <span id="address-offset-std">-</span></p>
+            <p>Offset DST: <span id="address-offset-dst">-</span></p>
+            <p>Country: <span id="address-country">-</span></p>
+            <p>Postcode: <span id="address-postcode">-</span></p>
+            <p>City: <span id="address-city">-</span></p>
+          </div>
+        </div>
+      </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
